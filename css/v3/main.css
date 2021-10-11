@@ -1,0 +1,16 @@
+main{
+    display: inline;
+}
+.main-content{
+    display: grid;
+    gap: 4rem;
+}
+.section-content{
+    display: grid;
+    gap: 2.5rem;
+}
+.sub-section{
+    display: grid;
+    gap: 2rem;
+    counter-reset: titleList;
+}

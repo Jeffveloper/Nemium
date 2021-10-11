@@ -1,0 +1,17 @@
+.hero {
+    height: 10rem;
+    width: 100vw;
+    background-image: linear-gradient(to top,rgba(255, 255, 255, 0.3),transparent),url(../../img/patron.webp);
+    background-size: 10rem;
+}
+@media (min-width: 768px) {
+    .hero {
+    height: 15rem;
+    margin-bottom: 6rem;
+    }
+}
+@media (min-width: 1024px){
+    .hero {
+        height: 35rem;
+        }
+}

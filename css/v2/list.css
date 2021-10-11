@@ -1,0 +1,31 @@
+/* listas */
+.section-content ol,
+.section-content ul{
+    list-style: none;
+}
+.mc-lista1 {
+    counter-reset: listStyle;
+    padding: 1rem 0 2rem 1rem;
+}
+.mc-lista1 li::before{
+    counter-increment: listStyle;
+    content:counter(listStyle) ". ";
+    color: var(--gris1);
+}
+.mc-lista2 li::before{
+    content:"●";
+    color: var(--blanco);
+    margin-bottom:auto;
+}
+.mc-lista2{
+    display: grid;
+    gap: 1.3rem;
+    padding: 1rem 0 2rem 1rem;
+}
+.mc-lista2 li{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1rem;
+    justify-content: left;
+    align-items: center;
+}

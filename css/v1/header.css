@@ -1,0 +1,117 @@
+.h2-t2{
+    color: var(--gris4);
+    text-transform: uppercase;
+    padding: 2rem 0;
+}
+
+/* apartado de variantes */
+.variantes{
+    padding-bottom: 4rem;
+}
+.lista-variantes{
+    list-style: none;
+}
+.lista-variantes li{
+    width: 100%;
+}
+.lista-cont {
+    list-style: none;
+    counter-reset: listStyle;
+    padding: 0 0 2rem 1rem;
+}
+.lista-cont li::before{
+    margin: 1rem 0 auto 0;
+    counter-increment: listStyle;
+    content:counter(listStyle) ". ";
+    color: var(--gris1);
+}
+.lista-cont li{
+    display: flex;
+    align-items: center;
+}
+
+.a-variante, .a-contenido{
+    font: 1.6rem / 2.4rem var(--fuente);
+    color: var(--gris1);
+    display: block;
+    text-decoration: none;
+}
+.a-variante{
+    padding: 1rem;
+    position: relative;
+    border-radius: 0.4rem;
+}
+.a-variante:hover{
+    background-color: var(--negro);
+    color: var(--blanco);
+}
+
+/* apartado de contendido */
+.a-contenido{
+    padding: 1rem 0;
+    /* margin-left: 2rem; */
+}
+.a-contenido:hover{
+    color: var(--gris3);
+    text-shadow: .3px .3px 5px rgb(219, 219, 219);
+}
+/* summary{
+    padding-bottom: 1.5rem;
+    list-style: none;
+} */
+summary{
+    color: var(--gris3);
+    padding-bottom: 1.5rem;
+    list-style: none;
+
+    transition: .25s ease-out;
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+summary::before{
+    content: '';
+    background-image: url('../../img/next.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-width: 1.6rem;
+    min-height: 1.6rem;
+    padding-top: .6rem;
+    transition: .25s ease-out;
+    filter: invert(26%) sepia(0%) saturate(5303%) hue-rotate(94deg) brightness(93%) contrast(92%);
+}
+summary:hover {
+    cursor: pointer;
+}
+details[open] summary{
+    transition: .25s ease;
+}
+details[open] summary::before{
+    transform: rotate(90deg);
+    transition: .25s ease-out;
+}
+
+
+
+.header-wrapper{
+    position: relative;
+    display:unset;
+}
+.contenido{
+    display: none;
+}
+@media (min-width: 768px){
+    .contenido{
+        display: block;
+    }
+    .header {
+        position: sticky;
+        top: -348px;
+        align-self: flex-start;
+    }
+}
+@media (min-width: 1024px){
+    .header {
+        top: -324px;
+    }
+}

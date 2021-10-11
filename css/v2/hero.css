@@ -1,0 +1,16 @@
+.hero {
+    height: 10rem;
+    width: 100vw;
+    background: linear-gradient(96.07deg, #314755 30.63%, #26A0DA 102.18%);
+}
+@media (min-width: 768px) {
+    .hero {
+    height: 15rem;
+    margin-bottom: 6rem;
+    }
+}
+@media (min-width: 1024px){
+    .hero {
+        height: 35rem;
+    }
+}

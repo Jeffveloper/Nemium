@@ -1,0 +1,45 @@
+
+:root{
+    --fuente:'Rubik', sans-serif;
+    --base: 1.6rem / 2.4rem var(--fuente);
+    /* colores t1 */
+    --blanco: rgb(255, 255, 255);
+    --negro: rgb(0, 0, 0);
+    --color1:#157EFB;
+    --color2:#5551FF;
+    --color3:#87A6E3;
+    --color4:#8d2de28c;
+    --fondo:#251F24;
+    --gris0:#d3d3d3;
+    --gris1: #a5a3a3;
+    --gris2:#616161;
+    --gris3:#474747;
+    --gris4:#252525;
+    --gris5:#212121;
+}
+html {
+    /* 1rem=10pxs */
+    font-size: 62.5%;
+    
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    /* max-width: 100%; */
+    /* overflow:overlay; */
+}
+
+body{
+    /* max-width: 100%; */
+    overflow-x: hidden;
+    font: var(--base);
+    color: var(--gris3);
+    background-color: var(--blanco);
+}
+
+.t-centrado{
+    text-align: center;
+}

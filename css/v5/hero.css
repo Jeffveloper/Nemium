@@ -1,0 +1,30 @@
+.hero {
+    display: none;
+    /* height: 10rem;
+    width: 100vw;
+
+    background-image: url('../../img/patron-2.png');
+    position: relative;
+    background-size: 5rem; */
+}
+/* 
+.hero::after{
+    background: linear-gradient(90deg, rgba(142,45,226,0.6) 5%, rgba(74,0,224,0.6) 130%);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .hero {
+    height: 15rem;
+    margin-bottom: 6rem;
+    }
+}
+@media (min-width: 1024px){
+    .hero {
+        height: 35rem;
+    }
+} */

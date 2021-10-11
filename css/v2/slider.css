@@ -1,0 +1,34 @@
+.slider{
+    overflow-x: overlay;
+}
+.slider-content {
+    display: block;
+    overflow:hidden;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+}
+.slider-slide, .slider-a, .slider-img{
+    width: 100%;
+    margin: 0;
+    display: inline-block;
+    overflow: hidden;
+    height:auto;
+    aspect-ratio: 16/9;
+}
+.slider-bullet{
+    display: inline-block;
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: var(--gris3);
+    border-radius: 50%;
+}
+.slider-bullet:hover{
+    background-color: var(--gris1);
+    transition: background-color 1s ease;
+}
+.slider-bullet-list{
+    text-align: center;
+}
+.bullet-on, .bullet-on:hover{
+    background-color: var(--blanco);
+}
